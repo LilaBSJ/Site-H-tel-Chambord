@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hotel Chambord</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+  
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light add-shadow" id="mainNav">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/img/1.png" width="80" height="80" class="d-inline-block align-top" alt="logo">
+           
+          </a>
+        </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+       
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Hôtel</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="quiSommesNous.html">Qui sommes nous?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="acces.html">Accès</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="avis.html">Avis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="evenements.html">Evenements</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chambres.html"> Chambres </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant.html"> Restaurant </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spa.html"> SPA </a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0 mr-auto">
+            <div class="input-group">
+                <input class="form-control" type="search" placeholder="" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary search-btn" type="button">
+                        <img src="images/icons8-loupe-50.png" alt="Loupe" style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </div>
+        </form>
+
+          <ul class="navbar-nav" style="font-size: 20px;">
+            <li class="nav-item" onmouseover="afficherLangue('en')" onmouseout="cacherLangue('en')">
+              <a class="nav-link" href="#" onclick="changerLangue('fr')">FR</a>
+              <div id="langueen" style="display: none;">
+                  <a class="nav-link" href="#" onclick="changerLangue('en')">EN</a>
+              </div>
+          </li>
+        </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="button my-2 my-sm-0" type="button" onclick="redirectToReservation()">Réservation</button>
+            </form>
+    
+        </div>
+  </nav>
+
+    <main>
+        <div class="container-fluid second-color pt-4">
+            <div class="row justify-content-center center-block text-center">
+          <div class="col-lg-12" style="margin: 15px;">
+                    <ul class="nav nav-tabs" id="reviewTabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="generalTab" data-toggle="tab" href="#generalReviews">Hôtel en général</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="roomsTab" data-toggle="tab" href="#roomReviews">Chambres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="restaurantTab" data-toggle="tab" href="#restaurantReviews">Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="spaTab" data-toggle="tab" href="#spaReviews">Soins</a>
+                        </li>
+                    </ul>
+                </div>
+
+              
+                <div class="tab-content col-lg-12">
+                    <img class="d-block mx-auto " src="images/img/fleur.svg" alt="fleur">
+                    <div class="tab-pane fade show active" id="generalReviews">
+                        <h4>Avis sur l'Hôtel Chambord:</h4>
+                        <div id="generalReviewList" class="review-tab row">
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="roomReviews">
+                        <h4>Avis sur les Chambres :</h4>
+                        <div id="roomReviewList" class="review-tab row">
+                          
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="restaurantReviews">
+                        <h4>Avis sur le Restaurant :</h4>
+                        <div id="restaurantReviewList" class="review-tab row">
+                          
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="spaReviews">
+                        <h4>Avis sur les Soins :</h4>
+                        <div id="spaReviewList" class="review-tab row">
+                         
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row justify-content-center center-block text-center" style="margin: 15px;">
+                    <div class="col-lg-12">
+                  
+                      <h4 class="display-5 fw-bold" style="text-decoration: underline;">Laissez votre avis:</h4>
+                      <br>
+                    </div>
+
+                        <form id="generalReviewForm" onsubmit="submitReview('generalReviewList', 'generalReviewForm')">
+                            <label for="userName">Nom/Prenom:</label>
+                            <input type="text" id="userName" name="userName" required>
+                            <br>
+                            <br>
+                            <label for="userReview">Votre avis :</label>
+                            <textarea id="userReview" name="userReview" required></textarea>
+    
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+      
+    </main>
+
+    <footer class="container text-center pt-4" >
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="mentions_legales.html" class="nav-link px-2 text-muted">Mentions Légales</a></li>
+        <li class="nav-item"><a href="cgv.html" class="nav-link px-2 text-muted">Conditions Générales de Vente</a></li>
+        <li class="nav-item"><a href="plan_site.html" class="nav-link px-2 text-muted">Plan du Site</a></li>
+        <li class="nav-item"><a href="javascript:window.print()" class="nav-link px-2 text-muted">Imprimer cette page</a></li>
+        <li class="nav-item"><a href="newsletter.html" class="nav-link px-2 text-muted">S'inscrire à la Newsletter</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Partage</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2023 Hotel Chambord de LILA. Tous droits réservés.</p>
+    </footer>
+
+
+  
+ 
+     <script src="js/jquery-3.7.1.js"></script>
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+     
+   
+  </body>
+</html>

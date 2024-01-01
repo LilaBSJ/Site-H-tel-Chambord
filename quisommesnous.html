@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Hotel Chambord</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+  
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light add-shadow" id="mainNav">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/img/1.png" width="80" height="80" class="d-inline-block align-top" alt="logo">
+           
+          </a>
+        </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+       
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Hôtel</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="quiSommesNous.html">Qui sommes nous?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="acces.html">Accès</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="avis.html">Avis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="evenements.html">Evenements</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chambres.html"> Chambres </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant.html"> Restaurant </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spa.html"> SPA </a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0 mr-auto">
+            <div class="input-group">
+                <input class="form-control" type="search" placeholder="" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary search-btn" type="button">
+                        <img src="images/icons8-loupe-50.png" alt="Loupe" style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </div>
+        </form>
+
+          <ul class="navbar-nav" style="font-size: 20px;">
+            <li class="nav-item" onmouseover="afficherLangue('en')" onmouseout="cacherLangue('en')">
+              <a class="nav-link" href="#" onclick="changerLangue('fr')">FR</a>
+              <div id="langueen" style="display: none;">
+                  <a class="nav-link" href="#" onclick="changerLangue('en')">EN</a>
+              </div>
+          </li>
+        </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="button my-2 my-sm-0" type="button" onclick="redirectToReservation()">Réservation</button>
+            </form>
+    
+        </div>
+  </nav>
+  <main>
+    <div class="container-fluid second-color pt-4 add-shadow"> 
+      <div class="row justify-content-center center-block text-center">
+          <div class="col-lg-12">
+              <h1 class="display-5 fw-bold">HISTOIRE DE CHAMBORD</h1>
+          
+              <img class="d-block mx-auto " src="images/img/fleur.svg" alt="fleur">
+          </div>
+          <div class="row justify-content-around pt-4 pb-2">
+              <div class="col-lg-6 col-md-8 col-sm-10">
+            <p class="lead">Bienvenue à l'Hôtel Chambord, une icône du luxe et de l'élégance au cœur de Paris. Découvrez notre histoire fascinante qui remonte à plusieurs décennies.</p>
+
+            <p>
+            'Hôtel Chambord a ouvert ses portes pour la première fois en [année d'ouverture]. Depuis lors, notre établissement a accueilli des voyageurs du monde entier, offrant une expérience unique et mémorable. Niché dans le charmant quartier du Marais, notre hôtel cinq étoiles est entouré de jardins paisibles, créant une oasis de tranquillité au milieu de l'effervescence de Paris.</p>  
+              <p>
+              Chaque recoin de l'Hôtel Chambord est imprégné d'histoire et de sophistication. Notre décorateur d'intérieur renommé, Didier Benderli de Kérylos Intérieurs, a apporté une touche d'élégance à chaque détail, créant une ambiance raffinée et intemporelle.
+              Nous nous engageons à offrir à nos clients une expérience exceptionnelle, mêlant luxe, confort et service personnalisé. Explorez nos chambres somptueuses, dégustez une cuisine exquise dans notre restaurant, détendez-vous dans notre spa de classe mondiale, et laissez-vous séduire par le charme inimitable de l'Hôtel Chambord.</p>
+              <p>
+              Plongez au cœur de l'histoire de l'Hôtel Chambord, et vous découvrirez notre engagement envers l'excellence et le raffinement. Au fil des ans, notre hôtel a été le témoin de moments exceptionnels, accueillant des personnalités éminentes et des célébrités du monde entier. Chaque chambre, chaque couloir, raconte une histoire unique, témoignant de la grandeur passée et présente de notre établissement.</p>
+              <p>
+              L'Hôtel Chambord n'est pas simplement un lieu d'hébergement, c'est une destination en soi. Notre équipe dévouée, composée de professionnels de l'hospitalité, est déterminée à rendre votre séjour inoubliable. Nous sommes fiers de notre héritage, mais nous sommes également tournés vers l'avenir, cherchant constamment à innover et à offrir à nos clients des expériences exceptionnelles.</p>
+              <p>
+              Que vous soyez ici pour affaires, pour célébrer un moment spécial, ou simplement pour une escapade relaxante, l'Hôtel Chambord s'efforce de surpasser vos attentes à chaque instant. Rejoignez-nous dans cette aventure, où le luxe rencontre l'histoire, et où chaque visite devient une part intégrante du récit de l'Hôtel Chambord.</p>
+              <p> 
+              Merci de faire partie de notre histoire. Nous sommes impatients de vous accueillir et de partager avec vous l'héritage de l'Hôtel Chambord.</p>
+           </div>
+           </div>
+          
+           </div>
+         
+      </div>
+  
+  </main>
+
+ 
+   
+  <footer class="container text-center pt-4" >
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="mentions_legales.html" class="nav-link px-2 text-muted">Mentions Légales</a></li>
+      <li class="nav-item"><a href="cgv.html" class="nav-link px-2 text-muted">Conditions Générales de Vente</a></li>
+      <li class="nav-item"><a href="plan_site.html" class="nav-link px-2 text-muted">Plan du Site</a></li>
+      <li class="nav-item"><a href="javascript:window.print()" class="nav-link px-2 text-muted">Imprimer cette page</a></li>
+      <li class="nav-item"><a href="newsletter.html" class="nav-link px-2 text-muted">S'inscrire à la Newsletter</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Partage</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2023 Hotel Chambord de LILA. Tous droits réservés.</p>
+  </footer>
+
+   
+     <script src="js/jquery-3.7.1.js"></script>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+     
+   
+  </body>
+</html>

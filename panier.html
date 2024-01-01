@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hotel Chambord</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+  </head>
+  
+  <body id="page-top">
+    
+  
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light add-shadow" id="mainNav">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/img/1.png" width="80" height="80" class="d-inline-block align-top" alt="logo">
+             
+            </a>
+          </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+         
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Hôtel</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="quiSommesNous.html">Qui sommes nous?</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="acces.html">Accès</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="avis.html">Avis</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="evenements.html">Evenements</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chambres.html"> Chambres </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurant.html"> Restaurant </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="spa.html"> SPA </a>
+              </li>
+            </ul>
+            
+            <form class="form-inline my-2 my-lg-0 mr-auto">
+              <div class="input-group">
+                  <input class="form-control" type="search" placeholder="" aria-label="Search">
+                  <div class="input-group-append">
+                      <button class="btn btn-outline-secondary search-btn" type="button">
+                          <img src="images/icons8-loupe-50.png" alt="Loupe" style="width: 20px; height: 20px;">
+                      </button>
+                  </div>
+              </div>
+          </form>
+
+            <ul class="navbar-nav" style="font-size: 20px;">
+              <li class="nav-item" onmouseover="afficherLangue('en')" onmouseout="cacherLangue('en')">
+                <a class="nav-link" href="#" onclick="changerLangue('fr')">FR</a>
+                <div id="langueen" style="display: none;">
+                    <a class="nav-link" href="#" onclick="changerLangue('en')">EN</a>
+                </div>
+            </li>
+          </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="button my-2 my-sm-0" type="button" onclick="redirectToReservation()">Réservation</button>
+              </form>
+      
+          </div>
+    </nav>
+
+
+    
+    <div class="container mt-5">
+        <h2>Votre Panier</h2>
+  
+        <div id="orderDetails" class="bg-light p-3 rounded"></div>
+  
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cgvCheckbox">
+          <label class="form-check-label" for="cgvCheckbox">J'accepte les Conditions Générales de Vente (CGV)</label>
+        </div>
+  
+        <button class="btn btn-black mt-3" onclick="validerCommande()">Valider la Commande</button>
+    </div>
+
+    <footer class="container text-center pt-4" >
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="mentions_legales.html" class="nav-link px-2 text-muted">Mentions Légales</a></li>
+          <li class="nav-item"><a href="cgv.html" class="nav-link px-2 text-muted">Conditions Générales de Vente</a></li>
+          <li class="nav-item"><a href="plan_site.html" class="nav-link px-2 text-muted">Plan du Site</a></li>
+          <li class="nav-item"><a href="javascript:window.print()" class="nav-link px-2 text-muted">Imprimer cette page</a></li>
+          <li class="nav-item"><a href="newsletter.html" class="nav-link px-2 text-muted">S'inscrire à la Newsletter</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Partage</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2023 Hotel Chambord de LILA. Tous droits réservés.</p>
+      </footer>
+ 
+       <script src="js/jquery-3.7.1.js"></script> 
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+       
+     
+    </body>
+  </html>

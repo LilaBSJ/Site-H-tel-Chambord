@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hotel Chambord</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    
+  
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light add-shadow" id="mainNav">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/img/1.png" width="80" height="80" class="d-inline-block align-top" alt="logo">
+           
+          </a>
+        </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+       
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Hôtel</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="quiSommesNous.html">Qui sommes nous?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="acces.html">Accès</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="avis.html">Avis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="evenements.html">Evenements</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chambres.html"> Chambres </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant.html"> Restaurant </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spa.html"> SPA </a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0 mr-auto">
+            <div class="input-group">
+                <input class="form-control" type="search" placeholder="" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary search-btn" type="button">
+                        <img src="images/icons8-loupe-50.png" alt="Loupe" style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </div>
+        </form>
+
+          <ul class="navbar-nav" style="font-size: 20px;">
+            <li class="nav-item" onmouseover="afficherLangue('en')" onmouseout="cacherLangue('en')">
+              <a class="nav-link" href="#" onclick="changerLangue('fr')">FR</a>
+              <div id="langueen" style="display: none;">
+                  <a class="nav-link" href="#" onclick="changerLangue('en')">EN</a>
+              </div>
+          </li>
+        </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="button my-2 my-sm-0" type="button" onclick="redirectToReservation()">Réservation</button>
+            </form>
+    
+        </div>
+  </nav>
+
+  <main>
+
+    <div class="container-fluid second-color pt-4 add-shadow"> 
+        <div class="row justify-content-center center-block text-center">
+            <div class="col-lg-12">
+                <h2 class="display-5 fw-bold">CONDITIONS GENERALES DE VENTE</h2>
+
+                <img class="d-block mx-auto " src="images/img/fleur.svg" alt="fleur">
+             </div>
+             <div class="row justify-content-around pt-4 pb-2">
+              <div class="col-lg-6 col-md-8 col-sm-10">
+                <h5>Réservations et Confirmation:</h5>
+                <br>
+                <p>Toutes les réservations sont sujettes à disponibilité et confirmation. Nous faisons tout notre possible pour vous offrir une expérience exceptionnelle, cependant, la confirmation dépend de la disponibilité des chambres à la période souhaitée. Afin de garantir votre réservation, une carte de crédit valide est requise au moment de la réservation. Cette préautorisation garantit votre chambre pour la date prévue de votre arrivée.
+                </p>
+                <br>
+                <br>
+                <h5>Annulation et Modification:</h5>
+                <br>
+                <p>Nous comprenons que les plans peuvent changer. Les annulations doivent être effectuées au moins 48 heures avant la date d'arrivée prévue pour éviter des frais. Les modifications de réservation sont soumises à la disponibilité de nos chambres et peuvent entraîner des frais supplémentaires en fonction des changements apportés à votre réservation initiale. Nous vous recommandons de nous informer le plus tôt possible de toute modification nécessaire.</p>
+                <br>
+                <br>
+                <h5>Arrivée et Départ:</h5>
+                <br>
+                <p>L'enregistrement peut être effectué à partir de 13h, assurant ainsi que votre chambre sera prête à votre arrivée. Nous vous prions de libérer la chambre avant 10h. Des frais supplémentaires peuvent s'appliquer en cas de départ tardif, cela étant toutefois sous réserve de disponibilité.
+                </p>
+                <br>
+                <br>
+                <h5>Paiement:</h5>
+                <br>
+                <p>Le paiement total de la réservation est dû au moment du départ. Nous acceptons les principales cartes de crédit. Les frais supplémentaires, tels que les services de chambre, les appels téléphoniques, le minibar, etc., seront facturés au moment du départ. Nous vous prions de régler ces frais lors de votre départ.</p>
+                <br>
+                <br>
+                <h5>Enfants et Lits Supplémentaires:</h5>
+                <br>
+                <p>Les enfants de moins de 3 ans séjournent gratuitement s'ils utilisent les lits déjà présents dans la chambre. Si vous avez besoin d'un lit supplémentaire, veuillez nous en informer à l'avance. Des frais supplémentaires seront appliqués pour les lits supplémentaires, sous réserve de disponibilité.
+                </p>
+                <br>
+                <br>
+                <h5>Animaux de Compagnie:</h5>
+                <br>
+                  <p>Les animaux de compagnie ne sont pas autorisés dans l'établissement sans accord préalable. Si vous voyagez avec un animal de compagnie, veuillez nous contacter à l'avance pour discuter des arrangements nécessaires. Des frais de nettoyage peuvent s'appliquer.</p>
+                <br>
+                <br>
+                  <h5>Politique de Non-fumeurs:</h5>
+                  <br>
+                  <p>L'Hôtel Chambord est un établissement non-fumeurs. Nous vous prions de respecter cette politique pour garantir le confort de tous nos clients. Des frais de nettoyage seront facturés en cas de non-respect de cette politique.</p>
+                <br>
+                <br>
+
+                  <h5>Responsabilité:</h5>
+                  <br>
+                  <p>L'Hôtel Chambord décline toute responsabilité pour les pertes, vols ou dommages aux biens des clients, sauf en cas de négligence de notre part. Nous vous recommandons de prendre les précautions nécessaires pour assurer la sécurité de vos effets personnels pendant votre séjour.</p>
+                <br>
+                <br>
+                  <h5>Force Majeure:</h5>
+                  <br>
+                  <p>L'Hôtel Chambord ne peut être tenu responsable des annulations ou modifications résultant de circonstances indépendantes de notre volonté, telles que des catastrophes naturelles, des actes de terrorisme ou des grèves.</p>
+                <br>
+                  <p>En effectuant une réservation à l'Hôtel Chambord, vous acceptez les présentes Conditions Générales de Vente. Ces conditions peuvent être modifiées sans préavis, veuillez les vérifier régulièrement pour toute mise à jour.</p>
+
+            </div>
+          
+          </div>
+            
+            </div>   
+            </div>
+    </main>
+
+    <footer class="container text-center pt-4" >
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="mentions_legales.html" class="nav-link px-2 text-muted">Mentions Légales</a></li>
+        <li class="nav-item"><a href="cgv.html" class="nav-link px-2 text-muted">Conditions Générales de Vente</a></li>
+        <li class="nav-item"><a href="plan_site.html" class="nav-link px-2 text-muted">Plan du Site</a></li>
+        <li class="nav-item"><a href="javascript:window.print()" class="nav-link px-2 text-muted">Imprimer cette page</a></li>
+        <li class="nav-item"><a href="newsletter.html" class="nav-link px-2 text-muted">S'inscrire à la Newsletter</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Partage</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2023 Hotel Chambord de LILA. Tous droits réservés.</p>
+    </footer>
+
+ 
+     <script src="js/jquery-3.7.1.js"></script>
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+     
+   
+  </body>
+</html>

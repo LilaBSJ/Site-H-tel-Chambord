@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hotel Chambord</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+  
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light add-shadow" id="mainNav">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/img/1.png" width="80" height="80" class="d-inline-block align-top" alt="logo">
+           
+          </a>
+        </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+       
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Hôtel</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="quiSommesNous.html">Qui sommes nous?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="acces.html">Accès</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="avis.html">Avis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="evenements.html">Evenements</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chambres.html"> Chambres </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant.html"> Restaurant </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spa.html"> SPA </a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0 mr-auto">
+            <div class="input-group">
+                <input class="form-control" type="search" placeholder="" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary search-btn" type="button">
+                        <img src="images/icons8-loupe-50.png" alt="Loupe" style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </div>
+        </form>
+
+          <ul class="navbar-nav" style="font-size: 20px;">
+            <li class="nav-item" onmouseover="afficherLangue('en')" onmouseout="cacherLangue('en')">
+              <a class="nav-link" href="#" onclick="changerLangue('fr')">FR</a>
+              <div id="langueen" style="display: none;">
+                  <a class="nav-link" href="#" onclick="changerLangue('en')">EN</a>
+              </div>
+          </li>
+        </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="button my-2 my-sm-0" type="button" onclick="redirectToReservation()">Réservation</button>
+            </form>
+    
+        </div>
+  </nav>
+
+  <main>
+
+
+      <div class="container-fluid pt-4 pb-4 add-shadow" style="background-color: #f9f4f1"> 
+        <div class="mt-4 row justify-content-around">
+          <div class="col-lg-6 col-md-8 col-sm-10 text-center ">
+              <h2>Le SPA et Nos Soins</h2>
+              <img class="d-block mx-auto " src="images/img/fleur.svg" alt="fleur">
+          </div>
+          <div class="row justify-content-center center-block text-center">
+               <div class="col-lg-4 col-sm-10">
+                  <div class="card" style="margin:10px">
+                      <img class="card-img-top" src="images/img/spa.jpg" alt="fiche1">
+                      <div class="card-body">
+                         <h5>Soin Détente</h5>
+                         <br>
+                        <p class="card-text">Profitez d'une expérience de détente ultime avec notre Soin Détente. Ce soin est spécialement conçu pour apaiser votre esprit et détendre votre corps.
+                          Laissez-vous envelopper par des techniques de massage douces et des senteurs apaisantes, créant une atmosphère de sérénité. </p>
+                        <br>
+                        <br>
+                        <p>Durée: 1h</p>
+                       
+                      </div>
+              
+                    </div>
+               </div>
+               <div class="col-lg-4 col-sm-10">
+                <div class="card" style="margin:10px">
+                    <img class="card-img-top" src="images/img/spa24.jpg" alt="fiche2">
+                    <div class="card-body">
+                       <h5>Soin Découverte</h5>
+                       <br>
+                      <p class="card-text">Découvrez une sensation de bien-être avec notre Soin Découverte. Ce soin unique combine des éléments de relaxation et de découverte sensorielle.
+                        Profitez d'un massage personnalisé et d'arômes délicats qui éveilleront vos sens, offrant une expérience de spa inoubliable.</p>
+                      <br>
+                      <br>
+                      <p>Durée: 1,5h</p>
+                    
+                    </div>
+            
+                  </div>
+             </div>
+             <div class="col-lg-4 col-sm-10">
+              <div class="card" style="margin:10px" >
+                  <img class="card-img-top" src="images/img/spa22.jpg" alt="fiche3">
+                  <div class="card-body">
+                     <h5>Soin Relaxant</h5>
+                     <br>
+                    <p class="card-text"> Notre Soin Relaxant est conçu pour libérer les tensions et restaurer l'équilibre intérieur. Les techniques de massage apaisantes ciblent les zones de stress,
+                      favorisant une relaxation profonde. Laissez-vous emporter dans un état de calme et de bien-être total. Relaxation totale de tout votre corps.</p>
+                    <br>
+                    <br>
+                    <p>Durée: 45min</p>
+                  
+                  </div>
+          
+                </div>
+           </div>
+           <div class="col-lg-4 col-sm-10">
+            <div class="card" style="margin:10px">
+                <img class="card-img-top" src="images/img/spa23.jpg" alt="fiche4">
+                <div class="card-body">
+                   <h5>Soin Plaisir</h5>
+                   <br>
+                  <p class="card-text">Plongez dans le luxe de notre Soin Plaisir. Ce traitement raffiné combine des massages revitalisants avec des soins de la peau de qualité.
+                  Profitez d'une expérience complète qui nourrit votre corps et votre esprit, laissant votre peau radieuse et votre esprit revigoré. </p>
+                <br>
+              <br>
+              <p>Durée: 2h</p>
+           
+                </div>
+        
+              </div>
+         </div>
+         <div class="col-lg-4 col-sm-10">
+          <div class="card" style="margin:10px" >
+              <img class="card-img-top" src="images/img/SPA2.jpg" alt="fiche5">
+              <div class="card-body">
+                 <h5>Soin Evasion</h5>
+                 <br>
+                <p class="card-text"> Laissez-vous emporter dans un voyage sensoriel avec notre Soin Evasion. Ce soin exquis marie des techniques de massage relaxantes à des ingrédients riches et apaisants.
+                  Offrez-vous une évasion totale du quotidien, rétablissant l'harmonie intérieure. </p>
+                <br>
+              <br>
+              <p>Durée: 1h</p>
+           
+              </div>
+      
+            </div>
+       </div>
+       </div>
+      </div>
+    </div>
+  </main>
+
+    <footer class="container text-center pt-4" >
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="mentions_legales.html" class="nav-link px-2 text-muted">Mentions Légales</a></li>
+        <li class="nav-item"><a href="cgv.html" class="nav-link px-2 text-muted">Conditions Générales de Vente</a></li>
+        <li class="nav-item"><a href="plan_site.html" class="nav-link px-2 text-muted">Plan du Site</a></li>
+        <li class="nav-item"><a href="javascript:window.print()" class="nav-link px-2 text-muted">Imprimer cette page</a></li>
+        <li class="nav-item"><a href="newsletter.html" class="nav-link px-2 text-muted">S'inscrire à la Newsletter</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Partage</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2023 Hotel Chambord de LILA. Tous droits réservés.</p>
+    </footer>
+
+ 
+     <script src="js/jquery-3.7.1.js"></script>
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+     
+   
+  </body>
+</html>

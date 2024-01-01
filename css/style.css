@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+@font-face {
+  font-family:'Playfair Display';
+  src: url('../font/PlayfairDisplay-VariableFont_wght.ttf');
+  src: url('../font/PlayfairDisplay-VariableFont_wght.ttf?#iefix') format('embedded-opentype');
+        
+}
+@font-face {
+  font-family:'PlayfairSemiBold';
+  src: url('../font/PlayfairDisplay-SemiBold.ttf.ttf');
+        
+}
+
+body {
+  margin:0;
+  font-family: 'Playfair Display';
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+
+h6, h5, h4, h3, h2, h1{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family:'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.2;
+ 
+}
+
+
+.button {
+  border: 0px solid var(--grey);
+  outline-color: var(--white);
+  outline-offset: -5px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .11875rem;
+  text-transform: uppercase;
+  background-color: #000;
+  outline-width: 1px;
+  outline-style: solid;
+  padding: 1rem 2rem;
+  font-family: Montserrat,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1875;
+  transition: transform .2s;
+}
+
+.button:hover {
+  transform: scale(1.05)
+}
+
+.button.is-text {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid transparent
+}
+
+.navbar_link {
+  grid-row-gap: .125rem;
+  color: var(--black);
+  text-align: center;
+  letter-spacing: .059375rem;
+  flex-direction: column;
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.21429;
+  text-decoration: none;
+  display: flex;
+}
+
+.navbar_link:hover {
+  opacity: .5;
+}
+
+.add-shadow
+{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+
+}  
+#mainNav{
+  background-image: url("../images/img/paris-svg.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+.second-color
+{
+  background-color: #f9f4f1;
+}
+
+.navbar_block2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+
+.wg-dd-1-togle {
+  margin-right: 10px;
+}
+
+.navmenu_line {
+  width: 2px; 
+  height: 20px; 
+  background-color: #000; 
+  margin: 0 10px;
+}
+
+.button {
+  border: 0px solid var(--grey);
+  outline-color: var(--white);
+  outline-offset: -5px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .11875rem;
+  text-transform: uppercase;
+  background-color: #000;
+  outline-width: 1px;
+  outline-style: solid;
+  padding: 1rem 2rem;
+  font-family: Montserrat,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1875;
+  transition: transform .2s;
+}
+
+
+#carrousel, #carrousel2, #carrousel3, #carrousel4{
+  max-width: 100%;
+  height: auto;
+  border: solid 4px #FFF;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: 0 auto;
+}
+
+.spa {
+  max-width: 100%;
+}
+
+.card-img-top
+{
+  height: 200px;
+}
+.row{
+  margin-top: 15px;
+}
+.menu {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.menu-header {
+  background-color: lightsteelblue;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-section {
+  padding: 20px;
+}
+
+.menu-item {
+  margin-bottom: 15px;
+}
+
+.menu-item h5 {
+  margin: 5px 0;
+}
+
+/*EVENEMENTS*/
+
+.video-container{
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+
+
+/*NEWSLETTER*/
+
+body {
+  background-color: #f4f4f4;
+}
+.container {
+  margin-top: 50px;
+}
+
+#newsletter-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+/*PLAN DU SITE*/
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/*CONTACT*/
+.sub-categories {
+  display: none;
+}
+
+/*RESERVATION*/
+.sub-room-types {
+  display: none;
+}
+
+/*PANIER*/
+.container {
+  margin-top: 20px;
+}
+
+#orderDetails {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  max-height: 200px;
+}
+
+.form-check {
+  margin-top: 20px;
+}
+
+.btn-black {
+  margin-top: 20px;
+}

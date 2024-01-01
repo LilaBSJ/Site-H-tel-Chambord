@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hotel Chambord</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    
+  
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light add-shadow" id="mainNav">
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/img/1.png" width="80" height="80" class="d-inline-block align-top" alt="logo">
+           
+          </a>
+        </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+       
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Hôtel</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="quiSommesNous.html">Qui sommes nous?</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="acces.html">Accès</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="avis.html">Avis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="evenements.html">Evenements</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chambres.html"> Chambres </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="restaurant.html"> Restaurant </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="spa.html"> SPA </a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0 mr-auto">
+            <div class="input-group">
+                <input class="form-control" type="search" placeholder="" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary search-btn" type="button">
+                        <img src="images/icons8-loupe-50.png" alt="Loupe" style="width: 20px; height: 20px;">
+                    </button>
+                </div>
+            </div>
+        </form>
+
+          <ul class="navbar-nav" style="font-size: 20px;">
+            <li class="nav-item" onmouseover="afficherLangue('en')" onmouseout="cacherLangue('en')">
+              <a class="nav-link" href="#" onclick="changerLangue('fr')">FR</a>
+              <div id="langueen" style="display: none;">
+                  <a class="nav-link" href="#" onclick="changerLangue('en')">EN</a>
+              </div>
+          </li>
+        </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="button my-2 my-sm-0" type="button" onclick="redirectToReservation()">Réservation</button>
+            </form>
+    
+        </div>
+  </nav>
+
+    <main>
+
+    <div class="container-fluid">
+        <div class="mt-4 row justify-content-center">
+          <h2 style="text-decoration: underline;">Chambres Classiques</h2>
+          </div>
+
+
+          <div class="mt-4 row">
+            <div class="col-lg-6 col-md-8 col-sm-10 second-color add-shadow" style="margin-left: auto; margin-right: auto; padding-top: 20px; border: 1px solid gray;">
+                <h6 class="text-center">
+                    Découvrez le confort et l'élégance intemporelle de nos Chambres Classiques à l'Hôtel Chambord.
+                    <br>
+                    Ces chambres accueillantes sont conçues pour offrir une expérience relaxante dans un espace de 18 mètres carrés. Profitez du sommeil réparateur sur un lit Queen-size, et offrez-vous une détente totale dans la salle de bains équipée d'une douche à l'italienne. Avec une décoration raffinée et une attention méticuleuse aux détails, nos Chambres Classiques incarnent le mariage parfait entre le confort moderne et le charme traditionnel, créant ainsi une retraite paisible au cœur de Paris.
+                    <br>
+                    <br>
+                    <br>
+                    PRIX: 567€
+                </h6>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <img src="images/img/ch1.jpg" class="photo img-fluid" alt="image1" style="border: 1px solid gray;">
+            </div>
+        </div>
+
+
+        <div class="mt-4 row justify-content-center">
+          <h2 style="text-decoration: underline;">Chambres Comfort</h2>
+          </div>       
+        <div class="mt-4 row">
+          <div class="col-lg-6 col-md-8 col-sm-10 second-color add-shadow" style="margin-left: auto; margin-right: auto; padding-top: 20px; border: 1px solid gray;">
+              <h6 class="text-center">   
+              Découvrez le raffinement absolu dans nos Chambres Comfort à l'Hôtel Chambord.
+              <br>
+              Avec un espace généreux de 22 mètres carrés, ces chambres sont conçues pour vous offrir une expérience luxueuse. Choisissez entre un lit double douillet ou un lit king-size spacieux pour une nuit de sommeil incomparable. Profitez de la commodité d'une salle de bains équipée d'une douche à l'italienne pour une détente totale, ou optez pour le luxe d'une baignoire pour vous immerger dans un bain apaisant. Nos Chambres Comfort incarnent l'élégance moderne avec une attention méticuleuse aux détails, créant ainsi un sanctuaire d'intimité au cœur de Paris.
+            <br>
+            <br>
+            <br>
+            PRIX: 839€
+            </h6>
+            </div>
+         
+            <div class="col-lg-6 col-md-8 col-sm-10">
+              <img src="images/img/ch7.jpg" class="photo img-fluid" alt="image1" style="border: 1px solid gray;">
+          </div>
+      </div>                
+  
+      <div class="mt-4 row justify-content-center">
+        <h2 style="text-decoration: underline;">Chambres Deluxe</h2>
+        </div>       
+      <div class="mt-4 row">
+        <div class="col-lg-6 col-md-8 col-sm-10 second-color add-shadow" style="margin-left: auto; margin-right: auto; padding-top: 20px; border: 1px solid gray;">
+            <h6 class="text-center">   
+           Bienvenue dans nos luxueuses chambres Deluxe à l'Hôtel Chambord, où le confort rencontre l'élégance pour créer une expérience inoubliable. 
+            <br> 
+            Chacune de nos chambres a été conçue avec soin pour offrir un refuge exclusif, alliant sophistication contemporaine et charme intemporel.Nos chambres Deluxe vous offrent le choix entre un lit double douillet ou deux lits king twin, selon vos préférences. Détendez-vous dans une salle de bains élégante équipée d'une douche à l'italienne moderne ou d'une baignoire apaisante. Avec une superficie généreuse de 27 mètres carrés, votre séjour sera marqué par le confort et l'élégance.
+          <br>
+          <br>
+          <br>
+          PRIX: 907€
+        </h6>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-10">
+            <img src="images/img/ch9.jpg" class="photo img-fluid" alt="image1" style="border: 1px solid gray;">
+        </div>
+    </div>    
+
+    <div class="mt-4 row justify-content-center">
+      <h2 style="text-decoration: underline;">Nos Suites</h2>
+      </div>       
+    <div class="mt-4 row">
+      <div class="col-lg-6 col-md-8 col-sm-10 second-color add-shadow" style="margin-left: auto; margin-right: auto; padding-top: 20px; border: 1px solid gray;">
+          <h6 class="text-center">  
+            Découvrez l'élégance incomparable de nos Suites à l'Hôtel Chambord, une expérience réservée aux connaisseurs.
+          <br> 
+         Profitez d'un lit double somptueux dans une chambre spacieuse. La salle de bains attenante propose une douche à l'italienne et/ou une baignoire, selon vos préférences. Détendez-vous dans le confort d'un salon séparé, offrant un espace supplémentaire pour votre plaisir. Nos suites sont conçues pour accueillir confortablement jusqu'à trois personnes, offrant environ 36 mètres carrés d'élégance et de sophistication. Vivez l'expérience ultime du luxe à chaque instant de votre séjour.
+        <br>
+        <br>
+        <br>
+        PRIX: 1043€
+      </h6>
+        </div>
+    
+        <div class="col-lg-6 col-md-8 col-sm-10">
+          <img src="images/img/ch8.jpg" class="photo img-fluid" alt="image1" style="border: 1px solid gray;">
+      </div>
+  </div> 
+              
+</div>
+    </main>
+
+    <footer class="container text-center pt-4" >
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="mentions_legales.html" class="nav-link px-2 text-muted">Mentions Légales</a></li>
+        <li class="nav-item"><a href="cgv.html" class="nav-link px-2 text-muted">Conditions Générales de Vente</a></li>
+        <li class="nav-item"><a href="plan_site.html" class="nav-link px-2 text-muted">Plan du Site</a></li>
+        <li class="nav-item"><a href="javascript:window.print()" class="nav-link px-2 text-muted">Imprimer cette page</a></li>
+        <li class="nav-item"><a href="newsletter.html" class="nav-link px-2 text-muted">S'inscrire à la Newsletter</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Partage</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2023 Hotel Chambord de LILA. Tous droits réservés.</p>
+    </footer>
+
+
+ 
+     <script src="js/jquery-3.7.1.js"></script>
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+     
+   
+  </body>
+</html>

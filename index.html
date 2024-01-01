@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Hotel Chambord</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+  </head>
+  
+  <body id="page-top">
+    
+  
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light add-shadow" id="mainNav">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/img/1.png" width="80" height="80" class="d-inline-block align-top" alt="logo">
+             
+            </a>
+          </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="font-size: 20px;">
+         
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Hôtel</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="quiSommesNous.html">Qui sommes nous?</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="acces.html">Accès</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="recrutement.html">Recrutement</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="avis.html">Avis</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="evenements.html">Evenements</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chambres.html"> Chambres </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurant.html"> Restaurant </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="spa.html"> SPA </a>
+              </li>
+            </ul>
+            
+            <form class="form-inline my-2 my-lg-0 m-auto">
+              <div class="input-group">
+                  <input class="form-control" type="search" placeholder="" aria-label="Search">
+                  <div class="input-group-append">
+                      <button class="btn btn-outline-secondary search-btn" type="button">
+                          <img src="images/icons8-loupe-50.png" alt="Loupe" style="width: 20px; height: 20px;">
+                      </button>
+                  </div>
+              </div>
+          </form>
+
+            <ul class="navbar-nav" style="font-size: 20px;">
+              <li class="nav-item" onmouseover="afficherLangue('en')" onmouseout="cacherLangue('en')">
+                <a class="nav-link" href="#" onclick="changerLangue('fr')">FR</a>
+                <div id="langueen" style="display: none;">
+                    <a class="nav-link" href="#" onclick="changerLangue('en')">EN</a>
+                </div>
+            </li>
+          </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="button my-2 my-sm-0" type="button" onclick="redirectToReservation()">Réservation</button>
+              </form>
+      
+          </div>
+    </nav>
+ 
+    <main>
+        <div class="container-fluid"> 
+    <div id="videoContainer">
+       <div class="embed-responsive  embed-responsive-16by9">
+            
+           <iframe class="emb ed-responsive-item" src="images/img/video/presentation.mp4" >
+            
+           </iframe>
+          </div>
+      </div>
+    </div>
+
+   <div class="container-fluid second-color pt-4 add-shadow"> 
+    <div class="row justify-content-center center-block text-center">
+        <div class="col-lg-12">
+            <h1 class="display-5 fw-bold" style="text-decoration: underline 2px;">Hôtel Chambord</h1>
+        
+            <img class="d-block mx-auto " src="images/img/1.png" alt="fleur" >
+        </div>
+        <div class="row justify-content-around pt-4 pb-2">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+          <p class="lead ">Découvrez l'élégance intemporelle de l'Hôtel Chambord, un havre de tranquillité niché au cœur de Paris. Derrière sa façade raffinée se dévoile un univers unique. Cet établissement de luxe, situé dans le 8ième arrondissement, vous invite à une escapade enchantée, appréciée par des voyageurs du monde entier en quête de discrétion et de charme.</p>
+         </div>
+         </div>
+        
+         </div>
+       
+    </div>
+
+
+    <div class="container-fluid pb-4 add-shadow"> 
+      <div class="mt-4 row justify-content-center">
+        <h2 style="text-decoration: underline;">Nos chambres</h2>
+        </div>
+
+      <div class="mt-4 row justify-content-around">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <p class="text-center">Explorez toutes les gammes de nos chambres, de la Classique à la Suite. Plongez dans l'atmosphère raffinée de nos chambres Classique, découvrez le confort optimal des chambres Confort, laissez-vous séduire par le luxe des chambres Deluxe, et expérimentez le summum du raffinement avec nos Suites. L'Hôtel Chambord vous invite à découvrir un monde où le charme, le confort et le luxe se rencontrent harmonieusement.</p></div>
+        </div>
+
+      <div class="row justify-content-center center-block text-center">
+           
+              <div id="carrousel" class="carousel slide" data-ride="carousel">
+
+                  <div id="container" class="carousel-inner">
+              
+                    
+              
+                          <div class="carousel-item">
+              
+                              <img src="images/img/ch1.jpg" class="photo" alt="Slide 1">
+              
+                              <div class="carousel-caption d-none d-md-block"></div>
+                             
+                          </div>
+              
+                          <div class="carousel-item">
+              
+                              <img src="images/img/ch2.jpg" class="photo" alt="Slide 2">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                          <div class="carousel-item">
+              
+                              <img src="images/img/ch3.jpg" class="photo" alt="Slide 3">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                          <div class="carousel-item">
+              
+                            <img src="images/img/ch4.jpg" class="photo" alt="Slide 4">
+            
+                            <div class="carousel-caption d-none d-md-block"> </div>
+                        </div>
+              
+                          <div class="carousel-item">
+              
+                              <img src="images/img/ch5.jpg" class="photo" alt="Slide 5">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                          <div class="carousel-item">
+              
+                              <img src="images/img/ch6.jpg" class="photo" alt="Slide 6">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                          <div class="carousel-item">
+              
+                              <img src="images/img/ch7.jpg" class="photo" alt="Slide 7">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                          <div class="carousel-item active carousel-item-left">
+              
+                              <img src="images/img/ch8.jpg" class="photo" alt="Slide 8">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                          <div class="carousel-item carousel-item-next carousel-item-left">
+              
+                              <img src="images/img/ch9.jpg" class="photo" alt="Slide 9">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                          <div class="carousel-item">
+              
+                              <img src="images/img/ch10.jpg" class="photo" alt="Slide 10">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                     </div>
+              
+                     <a class="carousel-control-prev" href="#carrousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carrousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                  </a>
+              </div>
+           
+          
+         
+        </div>
+  </div>
+
+
+    <div class="container-fluid second-color pt-1 pb-4 add-shadow"> 
+      <div class="mt-4 row justify-content-center">
+        <h2 style="text-decoration: underline;">Notre restaurant</h2>
+        </div>
+
+        <div class="mt-4 row justify-content-around">
+          <div class="col-lg-6 col-md-8 col-sm-10">
+              <p class="text-center">Découvrez une expérience culinaire raffinée au sein de notre restaurant, où chaque repas devient une véritable aventure gustative. Notre carte Brasserie, proposée durant les heures du midi, vous invite à savourer des plats délicieusement préparés avec des ingrédients frais et de qualité. Pour l'après-midi, notre Carte Dégustation offre une sélection exquise de mets, parfaite pour une pause gourmande. En soirée, plongez dans l'ambiance sophistiquée de notre Carte Restaurant, où des plats élégamment présentés et des saveurs exceptionnelles vous promettent une expérience gastronomique inoubliable. Laissez-vous séduire par notre cuisine créative et notre atmosphère chaleureuse, créant ainsi des moments mémorables.</p></div>
+          </div>
+
+          <div class="container-fluid pt-4 pb-4"> 
+        <div class="row justify-content-center center-block text-center">
+             
+                <div id="carrousel2" class="carousel slide" data-ride="carousel">
+
+                    <div id="container2" class="carousel-inner">
+                
+                
+                            <div class="carousel-item">
+                
+                                <img src="images/img/plat1.jpg" class="photo" alt="Slide 1">
+                
+                                <div class="carousel-caption d-none d-md-block"></div>
+                               
+                            </div>
+
+                
+                            <div class="carousel-item">
+                
+                                <img src="images/img/plat2.jpg" class="photo" alt="Slide 2">
+                
+                                <div class="carousel-caption d-none d-md-block"> </div>
+                            </div>
+                
+                            <div class="carousel-item">
+                
+                                <img src="images/img/plat3.jpg" class="photo" alt="Slide 3">
+                
+                                <div class="carousel-caption d-none d-md-block"> </div>
+                            </div>
+                
+                            <div class="carousel-item">
+                
+                                <img src="images/img/plat4.jpg" class="photo" alt="Slide 4">
+                
+                                <div class="carousel-caption d-none d-md-block"> </div>
+                            </div>
+                
+                            <div class="carousel-item">
+                
+                                <img src="images/img/plat5.jpg" class="photo" alt="Slide 5">
+                
+                                <div class="carousel-caption d-none d-md-block"> </div>
+                            </div>
+                
+                            <div class="carousel-item">
+                
+                                <img src="images/img/plat6.jpg" class="photo" alt="Slide 6">
+                
+                                <div class="carousel-caption d-none d-md-block"> </div>
+                            </div>
+                
+                            <div class="carousel-item">
+                
+                              <img src="images/img/plat88.jpg" class="photo" alt="Slide 7">
+               
+                               <div class="carousel-caption d-none d-md-block"> </div>
+                           </div>
+                
+                            <div class="carousel-item active carousel-item-left">
+                
+                                <img src="images/img/plat8.jpg" class="photo" alt="Slide 8">
+                
+                                <div class="carousel-caption d-none d-md-block"> </div>
+                            </div>
+                
+                            
+                            <div class="carousel-item">
+                
+                              <img src="images/img/plat9.jpg" class="photo" alt="Slide 9">
+              
+                              <div class="carousel-caption d-none d-md-block"> </div>
+                          </div>
+              
+                    
+                
+                            <div class="carousel-item">
+                
+                                <img src="images/img/plat10.jpg" class="photo" alt="Slide 10">
+                
+                                <div class="carousel-caption d-none d-md-block"> </div>
+                            </div>
+                
+                          </div>
+                
+                       <a class="carousel-control-prev" href="#carrousel2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carrousel2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                </div>
+              </div>
+           </div>
+          </div>
+ 
+
+
+    
+
+    <div class="container-fluid pt-4 pb-4 add-shadow"> 
+      <div class="row justify-content-between">
+        <div class="mt-4 row justify-content-around">
+            <div class="col-lg-6 col-md-8 col-sm-10 text-center ">
+                <h2 style="text-decoration: underline;">Notre SPA</h2>
+                <p>Explorez l'univers apaisant de notre Spa, conçu pour vous offrir une évasion totale du stress quotidien. Notre page dédiée au Spa et à nos soins vous ouvre les portes d'un sanctuaire de bien-être où la relaxation est une priorité. Plongez dans un monde de Soin Détente, conçu pour libérer les tensions et apaiser l'esprit. Optez pour notre Soin Découverte, une expérience sensorielle qui éveillera vos sens et revitalisera votre peau. Laissez-vous emporter par le Soin Relaxant, une pause délicieuse qui apaise chaque muscle et procure une détente profonde. Le Soin Plaisir vous invite à une expérience sensorielle exceptionnelle, où les arômes envoûtants et les textures soigneusement sélectionnées créent une harmonie parfaite. Pour une évasion totale, notre Soin Evasion vous transporte dans un voyage sensoriel unique, combinant des techniques de massage expertes avec des produits luxueux.</p></div>
+            </div>
+       
+           
+                <div class="col-lg-6 col-md-8 col-sm-10 pb-4 text-center">
+            <img src="images/img/SPA1.webp" class="spa rounded add-shadow" alt="image1">
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-10 text-center ">
+            <img src="images/img/SPA3.webp" class="spa rounded add-shadow" alt="image2">
+        </div>
+           </div>
+
+           <div class="row justify-content-center mt-4">
+           
+            <div class="col-lg-6 col-md-8 col-sm-10 text-center ">
+        <img src="images/img/SPA2.jpg" class="spa rounded add-shadow" alt="image3">
+    </div>
+    
+       </div>
+                 
+          </div>
+   
+
+
+    <div class="container-fluid second-color pt-4 pb-4 add-shadow"> 
+      <div class="mt-4 row justify-content-around">
+        <div class="col-lg-6 col-md-8 col-sm-10 text-center ">
+            <h2>Nos actualités</h2>
+            <img class="d-block mx-auto " src="images/img/fleur.svg" alt="fleur" >
+        </div>
+        <div class="row justify-content-center center-block text-center">
+             <div class="col-lg-4 col-sm-10">
+                <div class="card" >
+                    <img class="card-img-top" src="images/img/salon.webp" alt="Card image">
+                    <div class="card-body">
+                       
+                      <p class="card-text">Luxe et Charme au Cœur de Paris : Découvrez l'Hôtel Chambord 5 Étoiles"</p>
+                    </div>
+                    <div class="card-body">
+                      <a href="actualites.html#article1" class="card-link">... en savoir plus</a>
+                    </div>
+                  </div>
+             </div>
+             <div class="col-lg-4 col-sm-10">
+                <div class="card"  >
+                    <img class="card-img-top" src="images/img/kitchen.jpg" alt="Card image">
+                    <div class="card-body">
+                       
+                      <p class="card-text">"Rencontre avec la Perfection Culinaire au Chambord"</p>
+                    </div>
+                    <div class="card-body">
+                      <a href="actualites.html#article2" class="card-link">... en savoir plus</a>
+                    </div>
+                  </div>
+             </div>
+             <div class="col-lg-4 col-sm-10 mb-4">
+                <div class="card"  >
+                    <img class="card-img-top" src="images/img/spa.jpg" alt="Card image cap">
+                    <div class="card-body">
+                       
+                      <p class="card-text">"Evasion Totale-Les Nouveaux Services de SPA au Chambord"</p>
+                    </div>
+                    <div class="card-body">
+                      <a href="actualites.html#article3" class="card-link">... en savoir plus</a>
+                    </div>
+                  </div>
+             </div>
+            
+             <button class="button mt-3 my-2 my-sm-0" type="button" onclick="redirectToActualites()">Plus d'actualités</button>
+
+            </div>
+          </div>
+        </div>
+</main>
+
+   
+    <footer class="container text-center pt-4" >
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="mentions_legales.html" class="nav-link px-2 text-muted">Mentions Légales</a></li>
+          <li class="nav-item"><a href="cgv.html" class="nav-link px-2 text-muted">Conditions Générales de Vente</a></li>
+          <li class="nav-item"><a href="plan_site.html" class="nav-link px-2 text-muted">Plan du Site</a></li>
+          <li class="nav-item"><a href="javascript:window.print()" class="nav-link px-2 text-muted">Imprimer cette page</a></li>
+          <li class="nav-item"><a href="newsletter.html" class="nav-link px-2 text-muted">S'inscrire à la Newsletter</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Partage</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2023 Hotel Chambord de LILA. Tous droits réservés.</p>
+      </footer>
+
+ 
+     <script src="js/jquery-3.7.1.js"></script>
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+     
+  </body>
+</html>
